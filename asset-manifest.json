@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/hw-ignata/static/css/main.b4a0560a.css",
+    "main.js": "/hw-ignata/static/js/main.586c42c3.js",
+    "static/js/787.32fa641f.chunk.js": "/hw-ignata/static/js/787.32fa641f.chunk.js",
+    "static/media/avatar.png": "/hw-ignata/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/hw-ignata/index.html",
+    "main.b4a0560a.css.map": "/hw-ignata/static/css/main.b4a0560a.css.map",
+    "main.586c42c3.js.map": "/hw-ignata/static/js/main.586c42c3.js.map",
+    "787.32fa641f.chunk.js.map": "/hw-ignata/static/js/787.32fa641f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4a0560a.css",
+    "static/js/main.586c42c3.js"
+  ]
+}
