@@ -1,4 +1,6 @@
 .greetingForm {
+    display: flex;
+    align-items: flex-start;
 }
 
 .inputAndButtonContainer {
@@ -12,9 +14,9 @@
 }
 
 .input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
     height: 100%;
     padding: 10px;
     border: 1px solid #D1D1D1;
@@ -24,6 +26,8 @@
 }
 
 .input:focus {
+    outline: none;
+    border: #99ff99 solid 2px;
 }
 
 .errorInput {
