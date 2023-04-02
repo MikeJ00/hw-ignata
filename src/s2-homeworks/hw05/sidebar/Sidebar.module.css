@@ -45,6 +45,7 @@
 
 .nav a:hover {
     color: #58ACFF;
+    background-color: blue;
 }
 
 .nav a.active {
