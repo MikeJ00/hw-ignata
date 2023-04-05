@@ -4,6 +4,8 @@ import Error404 from './pages/Error404'
 import PreJunior from './pages/PreJunior'
 import Junior from './pages/Junior'
 import JuniorPlus from './pages/JuniorPlus'
+import {Page} from "./pages/Page";
+import {DataState} from "./dataState/dataState";
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -25,6 +27,7 @@ function Pages() {
                 <Route path={"/pre-junior"} element={<PreJunior/>}/>
                 <Route path={"/junior"} element={<Junior/>}/>
                 <Route path={"/junior-plus"} element={<JuniorPlus/>}/>
+                <Route path={"/page/:id"} element={<Page pages={DataState.pages} />}/>
                 {/*<Route ...*/}
                 {/*<Route ...*/}
                 {/*<Route ...*/}
