@@ -2,10 +2,15 @@
 }
 
 .span {
+    display: inline-block;
+    padding-top: 15px;
+    height: 30px;
 }
 
 .input {
+    padding-top: 15px;
 }
 
 .pen {
+    color:black
 }
