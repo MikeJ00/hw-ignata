@@ -66,16 +66,18 @@ const HW15 = () => {
         // делает студент
         setPage(newPage)
         setCount(newCount)
-        sendQuery({page: newPage, count: newCount});
-        setSearchParams({page: newPage.toString(), count: newCount.toString()});
+        // sendQuery({page: newPage, count: newCount});
+        // setSearchParams({page: newPage.toString(), count: newCount.toString()});
+        setSearchParams([['page', newPage.toString()],['count', newCount.toString()],['sort', sort]])
     }
 
     const onChangeSort = (newSort: string) => {
         // делает студент
         setSort(newSort);
         setPage(1); // reset to the first page when sorting changes
-        sendQuery({sort: newSort, page: 1});
-        setSearchParams({sort: newSort, page: '1'});
+        // sendQuery({sort: newSort, page: 1});
+        // setSearchParams({sort: newSort, page: '1'});
+        setSearchParams([['page', '1'],['count', count.toString()],['sort', newSort]])
         // setSort(
         // setPage(1) // при сортировке сбрасывать на 1 страницу
 
@@ -87,10 +89,11 @@ const HW15 = () => {
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        sendQuery({page: params.page, count: params.count})
+        // sendQuery({page: params.page, count: params.count})
+        sendQuery(params)
         setPage(+params.page || 1)
         setCount(+params.count || 4)
-    }, [])
+    }, [searchParams])
 
     const mappedTechs = techs.map(t => (
         <div key={t.id} className={s.row}>
