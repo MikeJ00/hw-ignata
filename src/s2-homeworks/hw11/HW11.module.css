@@ -1,8 +1,17 @@
 .container {
+    margin: 0 auto;
+    text-align: center;
+    background: #FFF;
+    border-radius: 5px;
+    padding: 35px 40px 30px 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 .wrapper {
+
+
 }
 
 .number {
+
 }
