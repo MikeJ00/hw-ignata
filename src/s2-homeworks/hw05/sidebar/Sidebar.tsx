@@ -58,15 +58,6 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         Junior Plus
                     </NavLink>
                     <div>
-                    <div><NavLink to={"/page/0"} className={({isActive})=>(isActive ? s.active : " ")}>
-                        1
-                    </NavLink></div>
-                        <div><NavLink to={"/page/1"} className={({isActive})=>(isActive ? s.active : " ")}>
-                            2
-                        </NavLink></div>
-                        <div><NavLink to={"/page/2"} className={({isActive})=>(isActive ? s.active : " ")}>
-                            3
-                        </NavLink></div>
                 </div>
                 </nav>
             </aside>
